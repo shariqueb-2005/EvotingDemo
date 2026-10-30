@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- This line makes the page fit mobile screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voter Registration</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top heading bar -->
+  <div class="header">
+    <h1>Secure Voting System</h1>
+    <p>Secure Registration. Trusted Elections</p>
+  </div>
+
+  <!-- Main registration box -->
+  <div class="box">
+    <h2>Voter Registration</h2>
+    <p class="intro">Register your Voter ID, mobile number, fingerprint and iris to vote securely.</p>
+
+    <form>
+
+      <!-- Section 1 -->
+      <h3>1. Voter Details</h3>
+      <label>Voter ID</label>
+      <input type="text" placeholder="Enter Voter ID" required>
+
+      <label>Mobile Number</label>
+      <input type="text" placeholder="Enter your mobile number" required>
+      <small>An OTP will be sent to this number while voting.</small>
+
+      <!-- Section 2 -->
+      <h3>2. Biometric Registration</h3>
+      <div class="bio-row">
+        <div class="bio-box">
+          <div class="bio-fingerprint"><i class="fa-solid fa-fingerprint"></i>
+          </div>
+          <h4>Fingerprint</h4>
+          <p>Place your finger on the sensor.</p>
+          <button type="button">Capture Fingerprint</button>
+        </div>
+
+        <div class="bio-box">
+          <div class="bio-eye"><i class="fa-solid fa-eye"></i>
+          </div>
+          <h4>Iris</h4>
+          <p>Look into the iris camera.</p>
+          <button type="button">Capture Iris</button>
+        </div>
+      </div>
+
+      <!-- Consent line -->
+      <p class="consent">
+        <input type="checkbox" id="consent">
+        <label for="consent">I confirm that the details are correct and I agree to store my biometric data.</label>
+      </p>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button type="reset" class="reset-button">Reset</button>
+        <button type="submit" class="register-button">Register</button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
